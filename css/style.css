@@ -1,0 +1,68 @@
+:root {
+  --bs-primary:             #3498db; 
+  --bs-secondary:           #e67e22; 
+  
+  --bs-body-color:          #333333;
+  --bs-body-bg:             #fdf5e6; 
+  
+  --bs-font-sans-serif:     'Inter', 'Segoe UI', system-ui, sans-serif;
+  --bs-body-font-family:    var(--bs-font-sans-serif);
+  
+  --bs-border-radius:       0.5rem;
+  --bs-border-radius-lg:    0.75rem;
+  
+  --bs-box-shadow:          0 5px 15px rgba(0,0,0,0.1);
+  --bs-box-shadow-lg:       0 10px 25px rgba(62, 39, 35, 0.15);
+ 
+  --portfolio-hero-bg:      linear-gradient(135deg, #2c3e50 0%, #34495e 100%);
+  --portfolio-section-gap:  5rem;
+  --portfolio-transition:   0.3s ease;
+}
+ 
+html {
+  scroll-behavior: smooth;
+}
+ 
+#hero {
+  background: var(--portfolio-hero-bg);
+}
+
+.profile-img-custom {
+  max-width: 260px;
+  border: 5px solid var(--bs-primary);
+  transition: transform var(--portfolio-transition), box-shadow var(--portfolio-transition);
+}
+.profile-img-custom:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+}
+ 
+.card-img-top {
+  height: 200px;
+  object-fit: cover;
+  background-color: #eee;
+}
+ 
+.portfolio-section {
+  padding-top: var(--portfolio-section-gap);
+  padding-bottom: var(--portfolio-section-gap);
+}
+ 
+.project-card-hover {
+  transition: transform var(--portfolio-transition), box-shadow var(--portfolio-transition);
+}
+.project-card-hover:hover {
+  transform: translateY(-5px);
+  box-shadow: var(--bs-box-shadow-lg) !important;
+}
+
+.hero-img-floating {
+  border: 8px solid rgba(255, 255, 255, 0.1);
+  animation: float 6s ease-in-out infinite;
+}
+
+@keyframes float {
+  0% { transform: translateY(0px); }
+  50% { transform: translateY(-20px); }
+  100% { transform: translateY(0px); }
+}

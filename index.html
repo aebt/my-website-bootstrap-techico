@@ -1,0 +1,267 @@
+<!doctype html>
+<html lang="en" data-bs-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portfolio of Andre Techico, a Computer Engineering student.">
+  
+  <title>Andre Techico | Portfolio</title>
+
+  <link rel="icon" href="img/favicon.ico" sizes="any">
+  <link rel="icon" href="icon.svg" type="image/svg+xml">
+  <link rel="manifest" href="site.webmanifest">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous" />
+
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body data-bs-spy="scroll" data-bs-target="#navbarMain" data-bs-offset="80">
+
+  <nav class="navbar navbar-expand-lg bg-body-tertiary sticky-top shadow-sm">
+    <div class="container">
+      <a class="navbar-brand fw-bold text-primary" href="#hero">Andre Techico</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMain" aria-controls="navbarMain" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarMain">
+        <ul class="navbar-nav ms-auto gap-1">
+          <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="#projects">Works</a></li>
+          <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+          <li class="nav-item">
+            <a class="btn btn-primary btn-sm ms-2 px-3 text-white mt-1 mt-lg-0" href="#contact">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <main id="main-content">
+    
+<section id="hero" class="d-flex align-items-center min-vh-100 text-white position-relative" style="padding-top: 80px;">
+      <div class="container z-2">
+        <div class="row align-items-center justify-content-center text-center text-lg-start g-5">
+          
+          <div class="col-12 col-lg-6 mb-5 mb-lg-0">
+            <p class="text-uppercase fw-semibold letter-spacing-wide mb-2 opacity-75">Welcome to my portfolio</p>
+            <h1 class="display-1 fw-bold mb-3">Andre Techico</h1>
+            <p class="lead fs-3 mb-5 opacity-90">Computer Engineering Student</p>
+            <div class="d-flex flex-wrap justify-content-center justify-content-lg-start gap-3">
+              <a href="#projects" class="btn btn-primary btn-lg px-4">View My Works</a>
+              <a href="resume.html" class="btn btn-outline-light btn-lg px-4">View Resume</a>
+            </div>
+          </div>
+
+          <div class="col-12 col-lg-6 text-center">
+            <img src="img/andre.JPG" alt="Andre Techico" class="img-fluid rounded-circle shadow-lg hero-img-floating" style="max-width: 380px;">
+          </div>
+          
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="portfolio-section bg-body-tertiary">
+      <div class="container">
+        <div class="row align-items-center g-5">
+          <div class="col-12 col-md-4 text-center">
+            <img src="img/pfp.jpg" alt="Profile photo of Andre Techico" class="img-fluid rounded-circle shadow profile-img-custom">
+          </div>
+          <div class="col-12 col-md-8">
+            <h2 class="mb-4">About Me</h2>
+            <p class="lead">
+              I am a fifth-year Computer Engineering student at De La Salle University Manila, graduating in 2026. 
+            </p>
+            <p>
+              I have a strong passion for solving problems efficiently. I am experienced in hardware integration, maintaining IT devices, and full-stack development. I have a keen interest in emerging technologies, ranging from neurology to gaming console architecture. Recently, I had the incredible opportunity to participate in an immersion trip to Japan, where I visited 7 different companies to learn about their engineering workflows. When I'm not studying or coding, you can usually find me writing intricate backstories for my Dungeons & Dragons characters!
+            </p>
+            <div class="d-flex flex-wrap gap-2 mt-4">
+              <span class="badge bg-primary">Hardware/IoT</span>
+              <span class="badge bg-primary">Full-Stack Dev</span>
+              <span class="badge bg-secondary">C++ / Python</span>
+              <span class="badge bg-secondary">UI/UX Design</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="portfolio-section">
+      <div class="container">
+        <h2 class="text-center mb-2">My Creative Works</h2>
+        <p class="text-center text-body-secondary mb-5">A selection of my recent hardware and software projects.</p>
+        
+        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+          
+          <div class="col">
+            <article class="card h-100 shadow-sm border-0 project-card-hover">
+              <img src="img/glove-controller.webp" class="card-img-top" alt="Glove Controller for Virtual Reality" loading="lazy" width="400" height="200">
+              <div class="card-body d-flex flex-column">
+                <h3 class="card-title h5">VR Glove Controller</h3>
+                <p class="card-text text-body-secondary flex-grow-1">A motion-based controller with gyro and accelerometer sensors, designed to mimic traditional sculpting processes in Blender and VR environments for my thesis.</p>
+                <div class="d-flex flex-wrap gap-2 mb-3">
+                  <span class="badge bg-primary-subtle text-primary-emphasis">Hardware</span>
+                  <span class="badge bg-secondary-subtle text-secondary-emphasis">Sensors</span>
+                </div>
+              </div>
+            </article>
+          </div>
+
+          <div class="col">
+            <article class="card h-100 shadow-sm border-0 project-card-hover">
+              <img src="img/library-management-system.png" class="card-img-top" alt="Library Management System Dashboard" loading="lazy" width="400" height="200">
+              <div class="card-body d-flex flex-column">
+                <h3 class="card-title h5">Library Management System</h3>
+                <p class="card-text text-body-secondary flex-grow-1">A full-stack application built to digitize manual records. Features include real-time asset tracking, Role-Based Access Control (RBAC), and automated audit trails.</p>
+                <div class="d-flex flex-wrap gap-2 mb-3">
+                  <span class="badge bg-primary-subtle text-primary-emphasis">PHP</span>
+                  <span class="badge bg-secondary-subtle text-secondary-emphasis">MySQL</span>
+                </div>
+              </div>
+            </article>
+          </div>
+
+          <div class="col">
+            <article class="card h-100 shadow-sm border-0 project-card-hover">
+              <img src="img/spotify-tracker.jpg" class="card-img-top" alt="ESP32 Spotify Tracker on a breadboard" loading="lazy" width="400" height="200">
+              <div class="card-body d-flex flex-column">
+                <h3 class="card-title h5">Spotify Tracker & Clock</h3>
+                <p class="card-text text-body-secondary flex-grow-1">An ESP32-based multitasking IoT device utilizing FreeRTOS. Features real-time Spotify API visualization, an NTP-synced clock, and a Pomodoro timer.</p>
+                <div class="d-flex flex-wrap gap-2 mb-3">
+                  <span class="badge bg-primary-subtle text-primary-emphasis">ESP32 / IoT</span>
+                  <span class="badge bg-secondary-subtle text-secondary-emphasis">APIs</span>
+                </div>
+              </div>
+            </article>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <section id="skills" class="portfolio-section bg-body-tertiary">
+      <div class="container">
+        <h2 class="text-center mb-5">Technical Skills</h2>
+        <div class="row g-5 justify-content-center">
+          
+          <div class="col-12 col-md-6 col-lg-5">
+            <h3 class="h5 mb-4 text-primary">Programming</h3>
+            
+            <div class="mb-4">
+              <div class="d-flex justify-content-between mb-1">
+                <span class="fw-medium">C / C++ / C#</span><span class="text-body-secondary small">90%</span>
+              </div>
+              <div class="progress" role="progressbar" aria-label="C/C++ skill level" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">
+                <div class="progress-bar" style="width: 90%"></div>
+              </div>
+            </div>
+            
+            <div class="mb-4">
+              <div class="d-flex justify-content-between mb-1">
+                <span class="fw-medium">HTML, CSS, & JavaScript</span><span class="text-body-secondary small">85%</span>
+              </div>
+              <div class="progress" role="progressbar" aria-label="Web Dev skill level" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100">
+                <div class="progress-bar" style="width: 85%"></div>
+              </div>
+            </div>
+
+            <div class="mb-4">
+              <div class="d-flex justify-content-between mb-1">
+                <span class="fw-medium">Python & MATLAB</span><span class="text-body-secondary small">80%</span>
+              </div>
+              <div class="progress" role="progressbar" aria-label="Python skill level" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">
+                <div class="progress-bar" style="width: 80%"></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 col-md-6 col-lg-5">
+            <h3 class="h5 mb-4 text-primary">Tools & Hardware</h3>
+            
+            <div class="mb-4">
+              <div class="d-flex justify-content-between mb-1">
+                <span class="fw-medium">Microcontrollers (Arduino, ESP32)</span><span class="text-body-secondary small">95%</span>
+              </div>
+              <div class="progress" role="progressbar" aria-label="Hardware skill level" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100">
+                <div class="progress-bar bg-secondary" style="width: 95%"></div>
+              </div>
+            </div>
+            
+            <div class="mb-4">
+              <div class="d-flex justify-content-between mb-1">
+                <span class="fw-medium">Database (MySQL, XAMPP)</span><span class="text-body-secondary small">85%</span>
+              </div>
+              <div class="progress" role="progressbar" aria-label="Database skill level" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100">
+                <div class="progress-bar bg-secondary" style="width: 85%"></div>
+              </div>
+            </div>
+
+            <div class="mb-4">
+              <div class="d-flex justify-content-between mb-1">
+                <span class="fw-medium">Git & Version Control</span><span class="text-body-secondary small">80%</span>
+              </div>
+              <div class="progress" role="progressbar" aria-label="Git skill level" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">
+                <div class="progress-bar bg-secondary" style="width: 80%"></div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="portfolio-section">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-12 col-lg-7">
+            <h2 class="text-center mb-2">Get in Touch</h2>
+            <p class="text-center text-body-secondary mb-5">I am open to internship opportunities, projects, and collaborations.</p>
+            
+            <div id="form-wrapper" class="bg-white p-4 p-md-5 rounded shadow-sm border">
+              <form id="contactForm" novalidate>
+                <input type="hidden" name="access_key" value="0b86744b-f806-4ee4-b58e-74bbff05d8c2">
+                
+                <div class="mb-3">
+                  <label for="fullName" class="form-label fw-medium">Full Name</label>
+                  <input type="text" class="form-control bg-light" id="fullName" name="name" placeholder="Your Name" required>
+                </div>
+                
+                <div class="mb-3">
+                  <label for="email" class="form-label fw-medium">Email Address</label>
+                  <input type="email" class="form-control bg-light" id="email" name="email" placeholder="your.email@example.com" required>
+                </div>
+                
+                <div class="mb-4">
+                  <label for="message" class="form-label fw-medium">Message</label>
+                  <textarea class="form-control bg-light" id="message" name="message" rows="5" placeholder="How can we work together?" required></textarea>
+                </div>
+                
+                <button type="submit" class="btn btn-primary w-100 py-2 fw-bold">Send Message</button>
+              </form>
+            </div>
+
+            <div class="d-flex justify-content-center gap-4 mt-5">
+              <a href="https://github.com/aebt" class="text-body-secondary text-decoration-none fw-medium" target="_blank">GitHub</a>
+              <a href="#" class="text-body-secondary text-decoration-none fw-medium" target="_blank">LinkedIn</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="py-4 bg-dark text-white border-top">
+    <div class="container d-flex flex-column flex-md-row justify-content-between align-items-center gap-2">
+      <p class="mb-0 text-white-50 small">Built with Bootstrap 5. Hosted on Vercel.</p>
+      <p class="mb-0 text-white-50 small">&copy; 2026 Andre Techico</p>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

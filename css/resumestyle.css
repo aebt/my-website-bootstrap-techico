@@ -1,0 +1,254 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.5;
+    color: #333;
+    background-color: #fdf5e6; 
+    font-size: 14px; 
+}
+
+.back-nav {
+    background-color: #3E2723;
+    padding: 12px 20px;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+}
+.back-nav a {
+    color: #FFF8E1;
+    text-decoration: none;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: color 0.2s ease;
+}
+.back-nav a:hover {
+    color: #FFA726;
+}
+
+.resume-container {
+    display: flex; 
+    flex-direction: row; 
+    align-items: stretch; 
+    max-width: 900px; 
+    margin: 30px auto;
+    background-color: #fff;
+    box-shadow: 0 10px 25px rgba(62, 39, 35, 0.15); 
+    min-height: 1050px; 
+}
+
+.left-sidebar {
+    flex: 0 0 32%;
+    background-color: #3E2723; 
+    color: #FFF8E1;
+    padding: 35px 25px;
+    text-align: left;
+}
+
+.right-content {
+    flex: 1; 
+    padding: 40px;
+    background-color: #fff;
+}
+
+.profile-img-container {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.profile-img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 5px solid #FFA726;
+    object-fit: cover;
+}
+
+.sidebar-header {
+    font-size: 1.25em;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    margin-bottom: 15px;
+    padding-bottom: 5px;
+    border-bottom: 2px solid #FFA726;
+    color: #fff;
+}
+
+.education-section { margin-bottom: 25px; }
+
+.edu-item h3 {
+    font-size: 1.1em;
+    margin-bottom: 5px;
+    color: #FFCC80;
+}
+
+.edu-date {
+    font-style: italic;
+    font-size: 0.9em;
+    color: #D7CCC8;
+    margin-bottom: 5px;
+}
+
+.degree {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.achievements {
+    list-style-type: disc;
+    margin-left: 20px;
+    margin-bottom: 15px;
+    font-size: 0.95em;
+    color: #D7CCC8;
+}
+
+.coursework-header {
+    font-size: 1em;
+    margin-bottom: 5px;
+    color: #FFCC80;
+}
+
+.coursework {
+    font-size: 0.9em;
+    line-height: 1.4;
+    color: #D7CCC8;
+}
+
+.skill-category {
+    margin-bottom: 20px;
+}
+
+.skill-category h3 {
+    font-size: 1em;
+    margin-bottom: 8px;
+    color: #FFA726;
+}
+
+.skill-category p {
+    font-size: 0.95em;
+    line-height: 1.5;
+    color: #D7CCC8;
+}
+
+.main-header {
+    margin-bottom: 30px;
+    border-bottom: 3px solid #3E2723;
+    padding-bottom: 20px;
+}
+
+.main-header h1 {
+    font-size: 2.8em;
+    color: #3E2723;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    line-height: 1.1;
+}
+
+.job-title {
+    font-size: 1.4em;
+    color: #BF360C;
+    font-weight: 400;
+    margin-top: 5px;
+}
+
+.section-title {
+    font-size: 1.6em;
+    color: #3E2723;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    text-transform: uppercase;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 10px;
+}
+
+.section-title i {
+    margin-right: 12px;
+    color: #BF360C;
+}
+
+.summary-section p {
+    margin-bottom: 30px;
+    text-align: justify;
+    font-size: 1.05em;
+}
+
+.experience-section, .projects-section {
+    margin-bottom: 30px;
+}
+
+.job-item, .project-item {
+    margin-bottom: 25px;
+}
+
+.job-header, .project-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin-bottom: 10px;
+}
+
+.job-header h3, .project-header h3 {
+    font-size: 1.25em;
+    color: #3E2723;
+}
+
+.job-date, .project-date {
+    font-style: italic;
+    color: #795548;
+    font-size: 0.95em;
+}
+
+.job-item p, .project-item p {
+    text-align: justify;
+}
+
+.cert-list {
+    list-style-type: disc;
+    margin-left: 20px;
+}
+
+.cert-list li {
+    margin-bottom: 10px;
+    font-size: 1.05em;
+}
+
+@media print {
+    body {
+        background-color: #fff;
+        padding: 0;
+    }
+    
+    .resume-container {
+        width: 100%;
+        margin: 0;
+        box-shadow: none;
+        min-height: auto;
+        display: block; 
+    }
+    
+    .left-sidebar, .right-content {
+        width: 100%;
+        page-break-inside: avoid;
+    }
+
+    * {
+        -webkit-print-color-adjust: exact;
+        print-color-adjust: exact;
+    }
+}
+
+/* Responsive for Mobile Devices */
+@media (max-width: 768px) {
+    .resume-container {
+        flex-direction: column;
+    }
+    .left-sidebar {
+        flex: none;
+        width: 100%;
+    }
+}
