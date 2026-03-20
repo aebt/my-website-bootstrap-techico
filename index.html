@@ -42,7 +42,7 @@
 
   <main id="main-content">
     
-<section id="hero" class="d-flex align-items-center min-vh-100 text-white position-relative" style="padding-top: 80px;">
+    <section id="hero" class="d-flex align-items-center min-vh-100 text-white position-relative" style="padding-top: 80px;">
       <div class="container z-2">
         <div class="row align-items-center justify-content-center text-center text-lg-start g-5">
           
@@ -144,71 +144,23 @@
 
     <section id="skills" class="portfolio-section bg-body-tertiary">
       <div class="container">
-        <h2 class="text-center mb-5">Technical Skills</h2>
-        <div class="row g-5 justify-content-center">
-          
-          <div class="col-12 col-md-6 col-lg-5">
-            <h3 class="h5 mb-4 text-primary">Programming</h3>
+        <div class="row justify-content-center">
+          <div class="col-12 col-md-10 col-lg-8">
+            <h2 class="fw-bold mb-3" style="color: #2c3e50;">Technical Skills</h2>
+            <hr style="border: none; height: 3px; background-color: #3498db; opacity: 1; width: 100%; margin-bottom: 2rem;">
             
-            <div class="mb-4">
-              <div class="d-flex justify-content-between mb-1">
-                <span class="fw-medium">C / C++ / C#</span><span class="text-body-secondary small">90%</span>
-              </div>
-              <div class="progress" role="progressbar" aria-label="C/C++ skill level" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">
-                <div class="progress-bar" style="width: 90%"></div>
-              </div>
-            </div>
-            
-            <div class="mb-4">
-              <div class="d-flex justify-content-between mb-1">
-                <span class="fw-medium">HTML, CSS, & JavaScript</span><span class="text-body-secondary small">85%</span>
-              </div>
-              <div class="progress" role="progressbar" aria-label="Web Dev skill level" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100">
-                <div class="progress-bar" style="width: 85%"></div>
-              </div>
-            </div>
-
-            <div class="mb-4">
-              <div class="d-flex justify-content-between mb-1">
-                <span class="fw-medium">Python & MATLAB</span><span class="text-body-secondary small">80%</span>
-              </div>
-              <div class="progress" role="progressbar" aria-label="Python skill level" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">
-                <div class="progress-bar" style="width: 80%"></div>
-              </div>
+            <div class="d-flex flex-wrap gap-2">
+              <span class="badge rounded-pill custom-skill-badge">HTML5 & CSS3</span>
+              <span class="badge rounded-pill custom-skill-badge">JavaScript</span>
+              <span class="badge rounded-pill custom-skill-badge">C# & C++</span>
+              <span class="badge rounded-pill custom-skill-badge">Python</span>
+              <span class="badge rounded-pill custom-skill-badge">SQL, PHP, and Perl</span>
+              <span class="badge rounded-pill custom-skill-badge">Assembly, VHDL & Verilog</span>
+              <span class="badge rounded-pill custom-skill-badge">UI/UX Design</span>
+              <span class="badge rounded-pill custom-skill-badge">Git & Version Control</span>
+              <span class="badge rounded-pill custom-skill-badge">Responsive Design</span>
             </div>
           </div>
-
-          <div class="col-12 col-md-6 col-lg-5">
-            <h3 class="h5 mb-4 text-primary">Tools & Hardware</h3>
-            
-            <div class="mb-4">
-              <div class="d-flex justify-content-between mb-1">
-                <span class="fw-medium">Microcontrollers (Arduino, ESP32)</span><span class="text-body-secondary small">95%</span>
-              </div>
-              <div class="progress" role="progressbar" aria-label="Hardware skill level" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100">
-                <div class="progress-bar bg-secondary" style="width: 95%"></div>
-              </div>
-            </div>
-            
-            <div class="mb-4">
-              <div class="d-flex justify-content-between mb-1">
-                <span class="fw-medium">Database (MySQL, XAMPP)</span><span class="text-body-secondary small">85%</span>
-              </div>
-              <div class="progress" role="progressbar" aria-label="Database skill level" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100">
-                <div class="progress-bar bg-secondary" style="width: 85%"></div>
-              </div>
-            </div>
-
-            <div class="mb-4">
-              <div class="d-flex justify-content-between mb-1">
-                <span class="fw-medium">Git & Version Control</span><span class="text-body-secondary small">80%</span>
-              </div>
-              <div class="progress" role="progressbar" aria-label="Git skill level" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">
-                <div class="progress-bar bg-secondary" style="width: 80%"></div>
-              </div>
-            </div>
-          </div>
-
         </div>
       </div>
     </section>
@@ -222,7 +174,9 @@
             
             <div id="form-wrapper" class="bg-white p-4 p-md-5 rounded shadow-sm border">
               <form id="contactForm" novalidate>
-                <input type="hidden" name="access_key" value="0b86744b-f806-4ee4-b58e-74bbff05d8c2">
+                <input type="hidden" name="access_key" value="5d024ae2-ad80-4363-b5bb-aa253864a9fe">
+                
+                <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
                 
                 <div class="mb-3">
                   <label for="fullName" class="form-label fw-medium">Full Name</label>
@@ -240,6 +194,8 @@
                 </div>
                 
                 <button type="submit" class="btn btn-primary w-100 py-2 fw-bold">Send Message</button>
+                
+                <div id="form-result" class="mt-3 text-center small fw-bold"></div>
               </form>
             </div>
 
