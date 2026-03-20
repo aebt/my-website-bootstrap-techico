@@ -3,6 +3,7 @@ document.addEventListener('DOMContentLoaded', () => {
     setupFormListener();
 });
 
+// Controls the Navigation Bar highlighting as you scroll down the page
 function setupScrollSpy() {
     const sections = document.querySelectorAll('section[id]');
     const navLinks = document.querySelectorAll('.nav-link');
@@ -22,12 +23,13 @@ function setupScrollSpy() {
 
 const formLoadTime = Date.now();
 
+// Controls the Web3Forms Contact Submission and Spam Filters
 function setupFormListener() {
     const form = document.getElementById('contactForm');
 
     if (form) {
         form.addEventListener('submit', function(event) {
-            event.preventDefault(); 
+            event.preventDefault(); // Stop default page reload
 
             const emailVal = document.getElementById('email').value;
             const messageVal = document.getElementById('message').value;
@@ -71,6 +73,7 @@ function setupFormListener() {
             })
             .then(async (response) => {
                 if (response.status === 200) {
+                    // Targets the exact ID from your new HTML layout
                     const wrapper = document.getElementById('form-wrapper');
                     wrapper.innerHTML = `
                         <div class="text-center py-5 text-success">
