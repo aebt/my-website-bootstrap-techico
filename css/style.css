@@ -80,3 +80,13 @@ html {
     background-color: #2980b9;
     transform: translateY(-2px);
 }
+
+.navbar-nav .btn.d-flex.align-items-center {
+    height: 31px; 
+    
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+    line-height: 1 !important;
+
+    justify-content: center;
+}
